@@ -1,0 +1,104 @@
+/*
+Schrift: 'Cormorant Garamond'
+Farben: rgb(233, 233, 224), #333
+font-family: 'Cormorant Garamond', serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+/* --------------------------------*/
+
+* {
+    padding: 5px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: rgb(233, 233, 224);
+    color: #333;
+    font-weight: 600;
+}
+
+/* ==============HEADER===================================================*/
+
+header h1 {
+    text-align: center;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    border-top: 2px solid;
+    border-bottom: 5px double;
+}
+
+/* ===================MAIN==============================================*/
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 600px;
+    gap: 10px;
+}
+
+.box1 {
+    padding-left: 30px;
+    font-size: 40px;
+    font-weight: 800;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+.box2 {
+    height: 20%;
+    padding-bottom: 40px;
+    font-weight: 800;
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+span {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.box9 {
+    background-image: url("https://images.unsplash.com/photo-1529423374493-8b2f78fd2437?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80");
+    background-repeat: no-repeat;
+    background-size: 60vh;
+    background-color: aliceblue;
+    height: 100%;
+    grid-column: 3 / 4;
+    grid-row: 2 / 5;
+}
+
+/* .box9 P {
+} */
+
+.box10 {
+    font-size: 50px;
+    text-align: center;
+    border-style: double;
+    font-weight: 800;
+}
+
+.box11 {
+    text-align: center;
+    border-style: double;
+    font-size: 20px;
+}
+
+.box11 p {
+    color: grey;
+}
+
+.box12 {
+    background-image: url("https://cdn.icon-icons.com/icons2/2845/PNG/512/ikea_logo_icon_181297.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-style: double;
+}
